@@ -16,7 +16,7 @@ To start a web server for the application, run:
 
     lein ring server
 
-inside of src/clojure-backend/
+inside of src/clojure_backend/
 
 ## License
 
