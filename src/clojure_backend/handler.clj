@@ -19,7 +19,9 @@
 
   (GET "/dummy.json" request
        {:status 200
-        :body {:foo "bar" :timestamp (java.util.Date.)}}))
+        :body {:foo "bar" :timestamp (java.util.Date.)}})
+        
+  (route/not-found "<h1>Page not found</h1>"))
 
 (def app (-> ring-app
              (wrap-resource "public") ;; serve from "resources/public"
